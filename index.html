@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Animated cloud effect </title>
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		.main_background {
+			background-image: linear-gradient(rgba(0,4,0,0.1),rgba(0,4,0,0.1)),url(bgd.jpg);
+			height: 100vh;
+			width: 100%;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			position: absolute;
+			top:0;
+			left: 0;
+		}
+		.clouds {
+			background-image: url(cloud.png);
+			height: 100vh;
+			width: 100%;
+			background-size: cover;
+			position: absolute;
+			top: 0;
+			left: 0;
+			animation: animate 30s linear infinite;
+		}
+		@keyframes animate {
+			0% {
+				background-position: 0%;
+			}
+			25% {
+				background-position: 25%;
+			}
+			50% {
+				background-position: 50%;
+			}
+			100% {
+				background-position: 100%;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<div class="main_background">
+		<div class="clouds">
+			
+		</div>
+	</div>
+
+</body>
+</html>
